@@ -39,18 +39,18 @@ export default new Vuex.Store({
     },
     items: [
       {
-        text: 'Home',
-        href: '/home',
+        text: 'À propos de nous',
+        href: '/about',
         drawerIcon: 'mdi-home',
       },
       {
-        text: 'Favorites',
-        href: '/favorites',
+        text: 'Portfolio',
+        href: '/portfolio',
         drawerIcon: 'mdi-heart',
       },
       {
-        text: 'Upload',
-        href: '/upload',
+        text: 'Nous contacter',
+        href: '/contact',
         drawerIcon: 'mdi-upload',
       },
     ],

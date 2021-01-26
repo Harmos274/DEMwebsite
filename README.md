@@ -34,8 +34,10 @@ Resources:
 - API Youtube
 
 ### Project description
-First there will be a page with a short presentation of the association. The aim is to trigger the interest of the website visitor, so they will stay to the website for further information about us.
+First there will be a page with a short presentation of the association. The aim is to trigger the interest of the website 
+visitor, so they will stay to the website for further information about us.
 
-Next, there will be a portfolio with some of our project, illustrating what we can do with a camera. There will be a use of the Youtube API to embed some of our projects available in Youtube.
+Next, there will be a portfolio with some of our project, illustrating what we can do with a camera. There will be a use 
+of the Youtube API to embed some of our projects available in Youtube.
 
 Finally, a “Contact us” page will be available in order to send us emails.

@@ -14,7 +14,7 @@
   import Banner from '@/components/Banner'
 
   export default {
-    name: 'About',
+    name: 'Contact',
 
     components: {
       UserAlbums,

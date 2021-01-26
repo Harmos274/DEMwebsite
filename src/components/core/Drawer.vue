@@ -1,6 +1,5 @@
 <template>
   <v-navigation-drawer
-    v-if="$route.name !== 'Login'"
     v-model="drawer"
     app
     temporary
@@ -23,37 +22,11 @@
 
     <template v-slot:append>
       <v-list>
-        <v-list-group
-          :value="true"
-          no-action
-        >
-          <template v-slot:activator>
-            <v-list-item-avatar>
-              <profile-picture />
-            </v-list-item-avatar>
-            <v-list-item-content>
-              <v-list-item-title>{{ user.name }}</v-list-item-title>
-            </v-list-item-content>
-          </template>
-          <v-list-item>
-            <v-list-item-content>
-              <theme-switcher align="start" />
-            </v-list-item-content>
-          </v-list-item>
-          <!--          <v-list-item>-->
-          <!--            <v-list-item-content>-->
-          <!--              <v-list-item-title v-text="'Profile'" />-->
-          <!--            </v-list-item-content>-->
-          <!--          </v-list-item>-->
-          <v-list-item @click="$router.push({name: 'Login'})">
-            <v-list-item-content>
-              <v-list-item-title
-                class="red--text"
-                v-text="'Disconnect'"
-              />
-            </v-list-item-content>
-          </v-list-item>
-        </v-list-group>
+        <v-list-item>
+          <v-list-item-content>
+            <theme-switcher align="center" />
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </template>
   </v-navigation-drawer>
@@ -64,19 +37,16 @@
   import {
     mapGetters,
     mapMutations,
-    mapState,
   } from 'vuex'
 
   export default {
     name: 'CoreDrawer',
 
     components: {
-      ProfilePicture: () => import('@/components/core/ProfilePicture'),
       ThemeSwitcher: () => import('@/components/core/LightDarkSwitch'),
     },
     computed: {
       ...mapGetters(['links']),
-      ...mapState(['user']),
 
       drawer: {
         get () {

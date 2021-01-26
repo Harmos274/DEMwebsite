@@ -1,11 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Login from '@/views/Login'
-import Home from '@/views/Home'
-import OAuthCallback from '@/views/OAuthCallback'
-import Upload from '@/views/Upload'
-import Favorites from '@/views/Favorites'
+import About from '@/views/About'
+import Portfolio from '@/views/Portfolio'
+import Contact from '@/views/Contact'
 import E404 from '@/views/htmlErrors/404'
 import E500 from '@/views/htmlErrors/500'
 
@@ -17,32 +15,22 @@ const router = new Router({
     routes: [
         {
             path: '/',
-            redirect: '/login',
+            redirect: '/about',
         },
         {
-            path: '/login',
-            name: 'Login',
-            component: Login,
+            path: '/about',
+            name: 'À Propos',
+            component: About,
         },
         {
-            path: '/callback',
-            name: 'OAuth Callback',
-            component: OAuthCallback,
+            path: '/portfolio',
+            name: 'Portfolio',
+            component: Portfolio,
         },
         {
-            path: '/home',
-            name: 'Home',
-            component: Home,
-        },
-        {
-            path: '/upload',
-            name: 'Upload',
-            component: Upload,
-        },
-        {
-            path: '/favorites',
-            name: 'Favorites',
-            component: Favorites,
+            path: '/contact',
+            name: 'Nous Contacter',
+            component: Contact,
         },
         {
             path: '',

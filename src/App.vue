@@ -8,12 +8,16 @@
 </template>
 
 <script>
+  import CoreDrawer from '@/components/core/Drawer'
+  import CoreAppBar from '@/components/core/AppBar'
+  import CoreView from '@/components/core/View'
+
   export default {
     name: 'App',
     components: {
-      CoreAppBar: () => import('@/components/core/AppBar'),
-      CoreDrawer: () => import('@/components/core/Drawer'),
-      CoreView: () => import('@/components/core/View'),
+      CoreAppBar,
+      CoreDrawer,
+      CoreView,
     },
   }
 </script>
