@@ -2,8 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import VuexPersist from 'vuex-persist'
 
-import FormData from 'form-data'
-import axios from 'axios'
+// import FormData from 'form-data'
 
 Vue.use(Vuex)
 
@@ -12,7 +11,6 @@ const vuexStorage = new VuexPersist({
   storage: window.sessionStorage,
 })
 
-export const baseApiUrl = 'https://api.imgur.com/3'
 export const sortType = {
   ASCENDANT: 'up',
   DESCENDANT: 'down',
@@ -92,82 +90,5 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    logout ({ commit }) {
-      commit('setUser', { name: null, id: null, token: null, refresh_token: null })
-      commit('setPPUrl', null)
-    },
-
-    updateProfilePicture ({ commit }, user) {
-      const data = new FormData()
-      const config = {
-        method: 'get',
-        url: `${baseApiUrl}/account/${user.name}/avatar`,
-        headers: {
-          Authorization: 'Bearer ' + user.token,
-        },
-        data: data,
-      }
-      axios(config)
-        .then((response) => {
-          commit('setPPUrl', response.data.data.avatar)
-        })
-        .catch((error) => console.log(error))
-    },
-
-    getUserPictures ({ commit }, user) {
-      commit('clearPosts')
-      const data = new FormData()
-      const config = {
-        method: 'get',
-        url: `${baseApiUrl}/account/${user.name}/albums/`,
-        headers: {
-          Authorization: 'Bearer ' + user.token,
-        },
-        data: data,
-      }
-      axios(config)
-        .then(function (response) {
-          commit('setPosts', response.data.data)
-          commit('sortByDate')
-        })
-        .catch(function (error) { console.log(error) })
-    },
-
-    getUserFavorites ({ commit }, user) {
-      commit('clearPosts')
-      const data = new FormData()
-      const config = {
-        method: 'get',
-        url: `${baseApiUrl}/account/${user.name}/favorites/`,
-        headers: {
-          Authorization: 'Bearer ' + user.token,
-        },
-        data: data,
-      }
-      axios(config)
-          .then(function (response) {
-            commit('setPosts', response.data.data)
-            commit('sortByDate')
-          })
-          .catch(function (error) { console.log(error) })
-    },
-
-    searchForPictures ({ commit }, { user, query }) {
-      const data = new FormData()
-      const config = {
-        method: 'get',
-        url: `${baseApiUrl}/gallery/search/?q=${query}`,
-        headers: {
-          Authorization: 'Bearer ' + user.token,
-        },
-        data: data,
-      }
-      axios(config)
-          .then(function (response) {
-            commit('setPosts', response.data.data)
-            commit('sortByDate')
-          })
-          .catch(function (error) { console.log(error) })
-    },
   },
 })

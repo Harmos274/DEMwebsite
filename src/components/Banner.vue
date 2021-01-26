@@ -1,5 +1,9 @@
 <template>
-  <base-card dark>
+  <v-card
+    dark
+    outlined
+    elevation="8"
+  >
     <v-parallax
       :src="background"
       class="grey lighten-2"
@@ -16,30 +20,33 @@
           offset-md="5"
         >
           <h1 class="display-3 font-weight-light">
-            The Epicture
+            {{ name }}
           </h1>
 
           <div class="subheading text-uppercase pl-2 mb-4">
             {{ subtitle }}
           </div>
-          <sort-button />
         </v-col>
       </v-row>
     </v-parallax>
-  </base-card>
+  </v-card>
 </template>
 
 <script>
   export default {
     name: 'HomeBanner',
     components: {
-      SortButton: () => import('@/components/core/SortButton'),
     },
-
     props: {
+      name: {
+        type: String,
+        required: false,
+        default: '',
+      },
       subtitle: {
         type: String,
-        required: true,
+        required: false,
+        default: '',
       },
       background: {
         type: String,
