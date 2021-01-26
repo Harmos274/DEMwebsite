@@ -10,13 +10,15 @@
 </template>
 
 <script>
+  import UserAlbums from '@/components/home/UserAlbums'
+  import Banner from '@/components/Banner'
 
   export default {
     name: 'Home',
 
     components: {
-      UserAlbums: () => import('@/components/home/UserAlbums'),
-      Banner: () => import('@/components/Banner'),
+      UserAlbums,
+      Banner,
     },
     beforeCreate () {
       document.title = this.$route.name
