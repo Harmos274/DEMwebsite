@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Lovanör",
+    "description": "Lovanor vous propose de plonger dans un univers distopique... ",
+    "date": 2018,
+    "color": "grey",
+    "icon": "mdi-camera",
+    "images": [ "theElse.png", "mathildeActorsDirection.jpg" ]
+  },
+  {
+    "title": "The Else",
+    "description": "The Else",
+    "date": 2020,
+    "color": "green lighten-1",
+    "icon": "mdi-airballoon",
+    "images": [ "theElse.png", "nicoTheElse.jpg" ]
+  },
+  {
+    "title": "L'Empoisonnement",
+    "description": "L'Empoisonnement",
+    "date": 2019,
+    "color": "purple darken-1",
+    "icon": "mdi-book-variant",
+    "images": [ "lempoisonnement.png" ]
+  }
+]

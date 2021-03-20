@@ -3,12 +3,24 @@
     v-model="drawer"
     app
     temporary
+    hide-overlay
+    :width="$vuetify.breakpoint.xsOnly ? '100%' : '40%'"
   >
+    <v-list-item class="my-4">
+      <v-list-item-avatar>
+        <v-img :src="require('@/assets/Logo_DEM.gif')" />
+      </v-list-item-avatar>
+      <v-list-item-content>
+        <v-list-item-title>
+          Deus Ex Machina Prod
+        </v-list-item-title>
+      </v-list-item-content>
+    </v-list-item>
+    <v-divider />
     <v-list>
       <v-list-item
         v-for="(link, i) in links"
         :key="i"
-        :to="link.to"
         @click="onClick($event, link)"
       >
         <v-list-item-icon>
@@ -19,16 +31,6 @@
         />
       </v-list-item>
     </v-list>
-
-    <template v-slot:append>
-      <v-list>
-        <v-list-item>
-          <v-list-item-content>
-            <theme-switcher align="center" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </template>
   </v-navigation-drawer>
 </template>
 
@@ -43,7 +45,6 @@
     name: 'CoreDrawer',
 
     components: {
-      ThemeSwitcher: () => import('@/components/core/LightDarkSwitch'),
     },
     computed: {
       ...mapGetters(['links']),
@@ -62,17 +63,17 @@
 
       onClick (e, item) {
         e.stopPropagation()
+        this.setDrawer(false)
 
         if (item.to === '/') {
           this.$vuetify.goTo(0)
-          this.setDrawer(false)
           return
         }
-        if (item.to || !item.href) {
+        if (item.to || !item.href || item.href === this.$router.history.current.path) {
           return
         }
+
         this.$router.push({ path: item.href })
-        this.setDrawer(false)
       },
     },
   }

@@ -2,31 +2,44 @@
   <v-app-bar
     app
     flat
+    height="80"
+    color="white"
   >
     <v-app-bar-nav-icon
       class="hidden-md-and-up"
       @click="toggleDrawer"
     />
     <v-container class="mx-auto py-0">
-      <v-row align="center">
-        <v-img
-          :src="require('@/assets/logo.svg')"
-          class="mr-5 hidden-sm-and-down"
-          contain
-          height="48"
-          width="48"
-          max-width="48"
-          @click="$vuetify.goTo(0)"
-        />
-        <v-btn
+      <v-row
+        align="center"
+        :justify="$vuetify.breakpoint.smAndDown ? 'center' : 'start'"
+        dense
+      >
+        <v-col cols="auto">
+          <v-img
+            :src="require('@/assets/Logo_DEM.gif')"
+            class="mr-5 "
+            contain
+            height="48"
+            width="48"
+            max-width="48"
+            @click="$vuetify.goTo(0)"
+          />
+        </v-col>
+        <v-col
           v-for="(link, i) in links"
           :key="i"
-          class="hidden-sm-and-down"
-          text
-          @click="onClick($event, link)"
+          cols="auto"
         >
-          {{ link.text }}
-        </v-btn>
+          <v-btn
+
+            class="hidden-sm-and-down"
+            text
+            @click="onClick($event, link)"
+          >
+            {{ link.text }}
+          </v-btn>
+        </v-col>
       </v-row>
     </v-container>
   </v-app-bar>

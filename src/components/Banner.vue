@@ -1,13 +1,14 @@
 <template>
   <v-card
     dark
-    outlined
-    elevation="8"
+    flat
+    tile
+    elevation="2"
   >
     <v-parallax
       :src="background"
       class="grey lighten-2"
-      height="340"
+      :height="height || 340"
       width="100%"
     >
       <v-row
@@ -17,13 +18,13 @@
         <v-col
           cols="12"
           md="7"
-          offset-md="5"
+          offset-md="2"
         >
           <h1 class="display-3 font-weight-light">
             {{ name }}
           </h1>
 
-          <div class="subheading text-uppercase pl-2 mb-4">
+          <div class="subheading  pl-2 mb-4">
             {{ subtitle }}
           </div>
         </v-col>
@@ -35,8 +36,7 @@
 <script>
   export default {
     name: 'HomeBanner',
-    components: {
-    },
+    components: {},
     props: {
       name: {
         type: String,
@@ -51,6 +51,11 @@
       background: {
         type: String,
         required: true,
+      },
+      height: {
+        type: String,
+        required: false,
+        default: '340',
       },
     },
   }

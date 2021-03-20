@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-card>
+    <v-sheet>
       <v-img
         :src="require('@/assets/404.svg')"
         class="grey lighten-2"
@@ -23,7 +23,7 @@
           </div>
         </v-col>
       </v-row>
-    </v-card>
+    </v-sheet>
   </v-container>
 </template>
 

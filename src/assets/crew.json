@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Lucas Reveil",
+    "role": ["Cameraman" , "Réalisateur", "Scénariste"],
+    "picture": "lucas_reveil.jpg"
+  },
+  {
+    "name": "Nicolas Bahuault Carione",
+    "role": ["Cameraman", "Réalisateur", "Scénariste"],
+    "picture": "lucas_reveil.jpg"
+  },
+  {
+    "name": "Marin Gerard",
+    "role": ["Cameraman", "Réalisateur", "Scénariste"],
+    "picture": "lucas_reveil.jpg"
+  },
+  {
+    "name": "Mathilde Pain",
+    "role": ["Cameraman", "Réalisateur", "Scénariste"],
+    "picture": "lucas_reveil.jpg"
+  }
+]

@@ -10,7 +10,6 @@ import E500 from '@/views/htmlErrors/500'
 Vue.use(Router)
 
 const router = new Router({
-    mode: 'history',
     base: process.env.BASE_URL,
     routes: [
         {
@@ -19,17 +18,17 @@ const router = new Router({
         },
         {
             path: '/about',
-            name: 'À Propos',
+            name: 'DEM - À Propos',
             component: About,
         },
         {
             path: '/portfolio',
-            name: 'Portfolio',
+            name: 'DEM - Portfolio',
             component: Portfolio,
         },
         {
             path: '/contact',
-            name: 'Nous Contacter',
+            name: 'DEM - Nous Contacter',
             component: Contact,
         },
         {
