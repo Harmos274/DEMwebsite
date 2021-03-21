@@ -1,22 +1,47 @@
 [
   {
     "name": "Lucas Reveil",
-    "role": ["Cameraman" , "Réalisateur", "Scénariste"],
+    "role": ["Camera" , "Réalisateur", "Scénariste", "Acteur"],
     "picture": "lucas_reveil.jpg"
   },
   {
-    "name": "Nicolas Bahuault Carione",
-    "role": ["Cameraman", "Réalisateur", "Scénariste"],
-    "picture": "lucas_reveil.jpg"
+    "name": "Nicolas Bahuault-Carione",
+    "role": ["Camera", "Réalisateur", "Scénariste", "Acteur"],
+    "picture": "nico_bc.jpg"
   },
   {
     "name": "Marin Gerard",
-    "role": ["Cameraman", "Réalisateur", "Scénariste"],
-    "picture": "lucas_reveil.jpg"
+    "role": ["Camera", "Réalisateur", "Acteur"],
+    "picture": "marin_gerard.jpg"
+  },
+  {
+    "name": "Emmie Gerard",
+    "role": ["Scénariste", "Actrice"],
+    "picture": "emmie_gerard.jpg"
   },
   {
     "name": "Mathilde Pain",
-    "role": ["Cameraman", "Réalisateur", "Scénariste"],
-    "picture": "lucas_reveil.jpg"
+    "role": ["Camera", "Scénariste", "Actrice "],
+    "picture": "mathilde_pain.jpg"
+  },
+  {
+    "name": "Étienne Cimetière-Cano",
+    "role": ["Compositeur", "Réalisateur"],
+    "picture": "etienne_cc.jpg"
+  },
+  {
+    "name": "Jeanne Pignac",
+    "role": ["Camera", "Réalisatrice", "Scénariste", "Costumière","Actrice"],
+    "picture": "jeanne_pignac.jpg"
+  },
+  {
+    "name": "Caroline Mrt",
+    "role": ["Maquilleuse", "Costumière"],
+    "picture": "caro_mrt.jpg"
+  },
+  {
+    "name": "Lilian Verlhac",
+    "role": ["Réalisateur", "Scénariste", "Script Director"],
+    "picture": "lilian_verlhac.jpg"
   }
 ]

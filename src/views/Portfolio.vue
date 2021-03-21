@@ -19,9 +19,9 @@
             step="1"
             ticks="always"
             tick-size="0"
-            color="grey darken-3"
-            thumb-color="black"
-            track-color="lighten-4"
+            color="grey lighten-1"
+            thumb-color="white"
+            track-color="darken-4"
           />
         </v-container>
       </v-col>
@@ -92,7 +92,11 @@
       this.years = this.yearsLabel.length - 1
     },
     beforeCreate () {
+      this.$vuetify.theme.dark = true
       document.title = this.$route.name
+    },
+    beforeDestroy () {
+      this.$vuetify.theme.dark = false
     },
   }
 </script>

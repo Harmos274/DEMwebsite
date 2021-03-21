@@ -1,8 +1,7 @@
 <template>
-  <v-app>
+  <v-app :style="$route.hash === '/portfolio' ? 'background-color: black' : ''">
     <core-app-bar />
     <core-drawer />
-
     <core-view />
     <!--    <core-footer />-->
   </v-app>

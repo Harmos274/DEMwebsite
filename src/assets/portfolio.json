@@ -1,15 +1,15 @@
 [
   {
     "title": "Lovanör",
-    "description": "Lovanor vous propose de plonger dans un univers distopique... ",
+    "description": "Lovanor vous propose de plonger dans un univers dystopique, ce projet a été présenté lors du Nouveau Festival des lycéens 2017. ",
     "date": 2018,
     "color": "grey",
     "icon": "mdi-camera",
-    "images": [ "theElse.png", "mathildeActorsDirection.jpg" ]
+    "images": [ "lovanor.png", "lovanorBaseSousMarinepng.png","mathildeActorsDirection.jpg" ]
   },
   {
     "title": "The Else",
-    "description": "The Else",
+    "description": "The Else est un court-métrage se passant dans un monde post-apocalyptique.",
     "date": 2020,
     "color": "green lighten-1",
     "icon": "mdi-airballoon",
@@ -17,10 +17,10 @@
   },
   {
     "title": "L'Empoisonnement",
-    "description": "L'Empoisonnement",
+    "description": "L'Empoisonnement est un court-métrage pseudo documentaire exposant l'affaire du pain maudis de Pont-Saint-Esprit ayant eu lieu en 1951. Ce court métrage a remporté le premier prix du festival START 2019.",
     "date": 2019,
     "color": "purple darken-1",
     "icon": "mdi-book-variant",
-    "images": [ "lempoisonnement.png" ]
+    "images": [ "lempoisonnement.png", "lempoisennementVisuel.png" ]
   }
 ]

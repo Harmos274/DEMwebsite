@@ -8,7 +8,7 @@
       <v-slide-item
         v-for="(people, index) in crew"
         :key="index"
-        v-slot="{ active, toggle }"
+        v-slot="{ active }"
       >
         <v-card
           :color="active ? 'grey lighten-4' : 'grey lighten-5'"
@@ -18,7 +18,6 @@
           tile
           light
           width="300"
-          @click="toggle"
         >
           <v-img
             :src="require(`@/assets/heads/${people.picture}`)"
@@ -42,12 +41,12 @@
     name: 'SlideCrew',
     data () {
       return {
-        crew: require('@/assets/crew.json'),
+        crew: require('@/assets/crew.json').sort(() => Math.random() - 0.5), // shuffle
       }
     },
   }
 </script>
 
-<style scoped>
-
+<style lang="sass" scoped>
+$slide-group-prev-basis: 1000px
 </style>

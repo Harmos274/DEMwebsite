@@ -8,7 +8,7 @@
   >
     <v-list-item class="my-4">
       <v-list-item-avatar>
-        <v-img :src="require('@/assets/Logo_DEM.gif')" />
+        <v-img :src="$route.path !== '/portfolio' ? require('@/assets/Logo_DEM.gif') : require('@/assets/Dark_Logo_DEM.gif')" />
       </v-list-item-avatar>
       <v-list-item-content>
         <v-list-item-title>

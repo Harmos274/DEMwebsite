@@ -10,13 +10,13 @@
         Introduction
       </h1>
       <p class="text-body-1 mt-12 text-justify">
-        <strong>Deus Ex Machina Prod</strong> est né en région Nouvelle-Aquitaine au seins même du Lycée Gustave Eiffel à Bordeaux.
+        <strong>Deus Ex Machina Prod</strong> est né en région Nouvelle-Aquitaine au sein même du Lycée Gustave Eiffel à Bordeaux.
         À la base un club cinéma étudiant, nous avons décidé de transformer le club en association à la fin de nos années
         de lycéens.
       </p>
       <p class="text-body-1 text-justify mb-12">
-        Au départ composé quasi exclusivement de membres originaux du club, nous avons été rejoins avec le temps par de
-        nouvelles têtes. Étudiants dans différents millieux allant du cinéma jusqu'à la biologie et l'informatique, la
+        Au départ composé quasi exclusivement de membres originaux du club, nous avons été rejoints avec le temps par de
+        nouvelles têtes. Étudiants dans différents milieux allant du cinéma jusqu'à la biologie et l'informatique, la
         divergence de nos modes de pensée a prouvé à maintes reprises son efficacité lors de la réalisation d'un tournage
         ou l'écriture d'un scénario.
       </p>

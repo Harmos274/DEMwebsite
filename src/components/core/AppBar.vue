@@ -3,7 +3,7 @@
     app
     flat
     height="80"
-    color="white"
+    :color="$route.path === '/portfolio' ? '#121212' : 'white'"
   >
     <v-app-bar-nav-icon
       class="hidden-md-and-up"
@@ -17,7 +17,7 @@
       >
         <v-col cols="auto">
           <v-img
-            :src="require('@/assets/Logo_DEM.gif')"
+            :src="$route.path !== '/portfolio' ? require('@/assets/Logo_DEM.gif') : require('@/assets/Dark_Logo_DEM.gif')"
             class="mr-5 "
             contain
             height="48"

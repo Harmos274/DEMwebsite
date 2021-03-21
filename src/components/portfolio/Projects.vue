@@ -15,6 +15,7 @@
         :key="i"
       >
         <v-img
+          aspect-ratio="1.778"
           height="100%"
           :src="require(`@/assets/courts/${image}`)"
         >
