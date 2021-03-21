@@ -1,0 +1,20 @@
+[
+  {
+    "name": "FACTS",
+    "date": 2019,
+    "href": "http://www.facts-bordeaux.fr",
+    "picture": "facts2019.jpg",
+    "width": 590,
+    "dark": true,
+    "color": "#101D1E"
+  },
+  {
+    "name": "Nouveau Festival",
+    "date": 2017,
+    "href": "https://www.le-nouveau-festival.fr/le-nouveau-festival/actualites/",
+    "picture": "FDL2018.jpg",
+    "dark": true,
+    "width": 250,
+    "color": "#10384F"
+  }
+]

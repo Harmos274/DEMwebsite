@@ -1,5 +1,7 @@
 <template>
-  <v-sheet color="transparent">
+  <v-sheet
+    color="transparent"
+  >
     <v-slide-group
       class="pa-1"
     >
@@ -37,7 +39,7 @@
 
 <script>
   export default {
-    name: 'SlideGroup',
+    name: 'SlideCrew',
     data () {
       return {
         crew: require('@/assets/crew.json'),
